@@ -9,7 +9,11 @@ container.style.flexWrap = "wrap";
 
 // Change this size if your want.
 // But should never be less than 1
-const gridSize = 4;
+// Also, If the grid size is to big it will cause problems with performance.
+// because you are creating gridSize * gridSize number of elements....
+// So keep the gridSize 100 or less.
+// Even gridSize = 100 will create 10,000 elements.
+const gridSize = 100;
 
 for (let i = 0; i < gridSize; i++) {
     for (let j = 0; j < gridSize; j++) {
