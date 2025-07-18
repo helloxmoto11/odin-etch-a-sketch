@@ -11,7 +11,3 @@ body {
     align-items: center;
     background: red;
 }
-
-.box:hover {
-    background-color: red;
-}

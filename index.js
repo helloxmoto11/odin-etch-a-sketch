@@ -17,6 +17,9 @@ for (let i = 0; i < gridSize; i++) {
         box.style.width = containerSize / gridSize + "px";
         box.style.height = containerSize / gridSize + "px";
         box.style.backgroundColor = "pink";
+        box.addEventListener('mouseenter', () => {
+            box.style.backgroundColor = "orange";
+        });
         container.appendChild(box);
     }
 }
